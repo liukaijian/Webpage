@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+</head>
+<body>
+<div data-role="page" id="befor">
+	<div data-role="header" data-position="fixed">
+		<h2>心灵捕手</h2>
+	</div>
+	<div data-role="content">
+		<div style="margin-top:10%;margin-left:50%;">
+			<p>让</p>
+			<p>心</p>
+			<p>灵</p>
+			<p>在</p>
+			<p>音</p>
+			<p>乐</p>
+			<p>里</p>
+			<p>摇</p>
+			<p>晃</p>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h2><a href="#list" style="text-decoration:none;">音乐列表</a></h2>
+	</div>
+</div>
+
+<div data-role="page" id="list">
+	<div data-role="header" >
+		<a href="#befor" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐列表</h2>
+	</div>
+	<ul data-role="listview" >
+		<li>
+			<a href="#page1"><img src="img/j1.jpg">
+				<h2>黄金甲</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page2"><img src="img/j2.jpg">
+				<h2>夜曲</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page3"><img src="img/j3.jpg">
+				<h2>我的地盘</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page4"><img src="img/j4.jpg">
+				<h2>霍元甲</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page5"><img src="img/j5.jpg">
+				<h2>七里香</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page6"><img src="img/j6.jpg">
+				<h2>听妈妈的话</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page7"><img src="img/j7.jpg">
+				<h2>给我一首歌的时间</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page8"><img src="img/j8.jpg">
+				<h2>千里之外</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page9"><img src="img/j9.jpg">
+				<h2>不能说的秘密</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+		<li>
+			<a href="#page10"><img src="img/jay.jpg">
+				<h2>东风破</h2>
+				<p>周杰伦</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div data-role="page" id="page1">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放</h2>
+	</div>
+	<audio id="audio1"src="music/1.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>黄金甲</button>
+			<button><img src="img/j1.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:黄金甲</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt1">播放</button>
+			<button id="btn1">暂停</button>
+		</div>
+	</div>
+</div>
+<!-- 听妈妈的话 -->
+<div data-role="page" id="page2">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio2"src="music/2.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>夜曲</button>
+			<button><img src="img/j2.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:十一月的肖邦</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt2">播放</button>
+			<button id="btn2">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio3"src="music/3.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>我的地盘</button>
+			<button><img src="img/j3.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:七里香</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt3">播放</button>
+			<button id="btn3">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio4"src="music/4.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>霍元甲</button>
+			<button><img src="img/j4.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:霍元甲</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt4">播放</button>
+			<button id="btn4">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio5"src="music/5.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>七里香</button>
+			<button><img src="img/j5.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:七里香</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt5">播放</button>
+			<button id="btn5">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page6">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio6"src="music/6.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>听妈妈的话</button>
+			<button><img src="img/j6.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:范特西</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt6">播放</button>
+			<button id="btn6">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page7">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio7"src="music/7.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>给我一首歌的时间</button>
+			<button><img src="img/j7.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:摩杰座</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt7">播放</button>
+			<button id="btn7">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page8">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio8"src="music/8.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>千里之外</button>
+			<button><img src="img/j8.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:单曲</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt8">播放</button>
+			<button id="btn8">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page9">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio9"src="music/9.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>不能说的秘密</button>
+			<button><img src="img/j9.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:不能说的秘密</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt9">播放</button>
+			<button id="btn9">暂停</button>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page10">
+	<div data-role="header" >
+		<a href="#list" data-icon="back" data-iconpos="notext">回到首页</a>
+		<h2>音乐播放器</h2>
+	</div>
+	<audio id="audio10"src="music/dfp.mp3">
+	</audio>
+	<div data-role="content"  >
+		<div data-role="controlgroup">
+			<button>东风破</button>
+			<button><img src="img/jay.jpg"></button>
+			<button>周杰伦</button>
+			<button>专辑:七里香</button>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal" style="padding-left:30%">
+			<button id="bt10">播放</button>
+			<button id="btn10">暂停</button>
+		</div>
+	</div>
+</div>
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+	var audio=$("#audio1")[0];          
+    $("#bt1").on("tap",function(){      
+        audio.play();     
+    });  
+     $("#btn1").on("tap",function(){                  
+        audio.pause();   
+    });  
+     var audio1=$("#audio2")[0];          
+    $("#bt2").on("tap",function(){      
+        audio1.play();     
+    });  
+     $("#btn2").on("tap",function(){                  
+        audio1.pause();   
+    }); 
+    var audio2=$("#audio3")[0];          
+    $("#bt3").on("tap",function(){      
+        audio2.play();     
+    });  
+     $("#btn3").on("tap",function(){                  
+        audio2.pause();   
+    });  
+    var audio3=$("#audio4")[0];          
+    $("#bt4").on("tap",function(){      
+        audio3.play();     
+    });  
+     $("#btn4").on("tap",function(){                  
+        audio3.pause();   
+    });  
+    var audio4=$("#audio5")[0];          
+    $("#bt5").on("tap",function(){      
+        audio4.play();     
+    });  
+     $("#btn5").on("tap",function(){                  
+        audio4.pause();   
+    });  
+    var audio5=$("#audio6")[0];          
+    $("#bt6").on("tap",function(){      
+        audio5.play();     
+    });  
+     $("#btn6").on("tap",function(){                  
+        audio5.pause();   
+    });  
+    var audio6=$("#audio7")[0];          
+    $("#bt7").on("tap",function(){      
+        audio6.play();     
+    });  
+     $("#btn7").on("tap",function(){                  
+        audio6.pause();   
+    });  
+    var audio7=$("#audio8")[0];          
+    $("#bt8").on("tap",function(){      
+        audio7.play();     
+    });  
+     $("#btn8").on("tap",function(){                  
+        audio7.pause();   
+    });  
+    var audio8=$("#audio9")[0];          
+    $("#bt9").on("tap",function(){      
+        audio8.play();     
+    });  
+     $("#btn9").on("tap",function(){                  
+        audio8.pause();   
+    });  
+    var audio9=$("#audio10")[0];          
+    $("#bt10").on("tap",function(){      
+        audio9.play();     
+    });  
+     $("#btn10").on("tap",function(){                  
+        audio9.pause();   
+    });   
+</script>
+</body>
+</html>
