@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="help/btsp/bootstrap.min.css">
+	<style type="text/css">
+		*{
+			margin: 0PX;
+			padding: 0PX;
+		}
+		#nav{
+			background-color: rgb(180,177,176);
+			box-shadow: 2px 2px 1px rgb(150,150,150)
+		}
+		.nav_block{
+			background-color: rgb(190,190,190);
+		}
+		.text{
+			background-color: rgb(190,190,190);
+			font-family: "微软雅黑";
+			color: black;
+			border-bottom:3px rgb(130,130,130) solid;
+			
+		}
+		.text:hover{
+			background-color: rgb(240,240,240);
+		}
+		.list{
+			background-color: rgb(174,174,174);
+		}
+		.list li a{
+			font-family: "微软雅黑";
+			color: black;
+		}
+		.main{
+			margin-top: 50px;
+			
+			height: 800px;
+		}
+		.main h1{
+			font-size: 80px;
+			/*font-family: "微软雅黑";*/
+			color: rgb(190,190,190);
+			text-shadow: 2px 2px black;
+			margin-top: 200px;
+		}
+		.main h3{
+			text-shadow: 1px 1px grey;
+			font-family: "微软雅黑";
+			margin-top: 20px;
+		}
+		.main-line{
+			margin-top: 20px;
+			border-bottom:3px  rgb(190,190,190) solid;
+			box-shadow: 0px 1px 1px grey;
+		}
+		.main ul{
+			margin-top: 40px;
+			margin-left: 320px;
+		}
+		.main ul li{
+			margin-left: 10px;
+		}
+
+		.main ul li a{
+			width: 90px;
+			height: 40px;
+			font-size: 18px;
+			font-family: "微软雅黑";
+			border: 2px black solid;
+			background-color:rgb(190,190,190);
+			color: black;
+			text-shadow: 0px 1px 1px black; 
+			box-shadow: 2px 2px 2px black;
+		}
+		.main ul li a:hover{
+			background-color: black;
+			color: white;
+			box-shadow: 2px 2px 1px rgb(190,190,190);
+			transform: scale(1.1);
+		}
+		.about-line{
+			height: 50px;
+			background-color: rgb(190,190,190);
+		}
+		.about_main{
+			height: 700px;
+		}
+		.about_main div{
+			height: 700px;
+			/*border: 1px blue solid;*/
+		}
+		.about_main img{
+			width: 80%;
+			height: 50%;
+			display: block;
+			margin-top: 120px;
+			margin-left:auto;
+			margin-right: auto; 
+			z-index: 1;
+		}
+		#img1{
+			background-color: rgb(150,150,150);
+			opacity: 0;
+			width: 275px;
+			height: 150px;
+			position:absolute;
+			
+		}
+		#img1:hover{
+			opacity: 0.7;
+		}
+		#img2{
+			background-color: rgb(150,150,150);
+			opacity: 0;
+			width: 275px;
+			height: 370px;
+			position:absolute;
+			
+		}
+		#img2:hover{
+			opacity: 0.7;
+		}
+		#img3{
+			background-color: rgb(150,150,150);
+			opacity: 0;
+			width: 275px;
+			height: 380px;
+			position:absolute;
+			
+		}
+		#img3:hover{
+			opacity: 0.7;
+		}
+		#img4{
+			background-color: rgb(150,150,150);
+			opacity: 0;
+			width: 275px;
+			height: 150px;
+			position:absolute;
+			
+		}
+		#img4:hover{
+			opacity: 0.7;
+		}
+		#img5{
+			background-color: rgb(150,150,150);
+			opacity: 0;
+			width: 275px;
+			height: 200px;
+			position:absolute;
+			
+		}
+		#img5:hover{
+			opacity: 0.7;
+		}
+		#img6{
+			background-color: rgb(150,150,150);
+			opacity: 0;
+			width: 275px;
+			height: 230px;
+			position:absolute;
+			
+		}
+		#img6:hover{
+			opacity: 0.7;
+		}
+		.about_main h1{
+			margin-top: 100px;
+			font-size: 50px;
+			font-family: "微软雅黑";
+			margin-bottom: 50px;
+			color: black;
+		}
+		.about_main h3{
+			font-family: "微软雅黑";
+			color: black;
+			font-size: 20px;
+		}
+		#work{
+			height: 1000px;
+		}
+		.work_title{
+			margin-top: 80px;
+			margin-bottom: 20px;
+		}
+		.work_title h1{
+			/*font-weight: bold;*/
+			font-family: "微软雅黑";
+			color: black;
+		}
+		.work_title h3{
+			/*font-weight: bold;*/
+			font-family: "微软雅黑";
+			color: black;
+		}
+		.work_list{
+			
+			border-right: 1px rgb(190,190,190) solid;
+			border-bottom: 1px rgb(190,190,190) solid;
+			margin-bottom: 50px;
+			transition: all 0.3s linear;
+		}
+		.work_list:hover{
+			box-shadow: 4px 10px 7px black;
+		}
+		.work_list div{
+			border: 1px white solid;
+			width: 275px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.info{
+			background-color: rgb(150,150,150);
+			color: white;
+			position: relative;
+		}
+		.link{
+			margin-top: 200px;
+			height: 900px;
+		}
+		.link h1{
+			margin-top: 100px;
+			font-family: "微软雅黑";
+		}
+		.link h2{
+			font-family: "微软雅黑";
+		}
+		.link ul{
+			margin-top: 120px;
+		}
+		.link ul li{
+			margin-top: 20px;
+		}
+
+		.link ul li a{
+			width: 90px;
+			height: 40px;
+			font-size: 18px;
+			font-family: "微软雅黑";
+			border: 2px black solid;
+			background-color:rgb(190,190,190);
+			color: black;
+			text-shadow: 0px 1px 1px black; 
+			box-shadow: 2px 2px 2px black;
+		}
+		#link ul li a:hover{
+			background-color: black;
+			color: white;
+			box-shadow: 2px 2px 1px rgb(190,190,190);
+			transform: scale(1.1);
+		}
+		footer{
+			height: 100px;
+			background-color: rgb(190,190,190);
+			font-family: "微软雅黑";
+		}
+		footer ul{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+<!-- 导航条 -->
+<nav class="navbar navbar-fixed-top" id="nav">
+	<div class="container nav_block">
+		<div class="navbar-header">
+			<a class="navbar-brand text" href="">开&nbsp;建</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right list">
+			<li><a href="#home" >主页</a></li>
+			<li><a href="#about">关于</a></li>
+			<li><a href="#work">作品</a></li>
+			<li><a href="#link">联系</a></li>
+		</ul>
+	</div>
+</nav>
+<!-- 主页 -->
+<div class="main" id="home">
+	<div class="container">
+	<!-- 标题 -->
+		<div class="col-md-12 col-xs-12">
+			<h1 class="text-center">DIY&nbsp;web&nbsp;设&nbsp;计&nbsp;工&nbsp;作&nbsp;室</h1>
+		</div>
+		<div class='col-md-12 col-xs-12'>
+			<h3 class='text-center'>让 生 活 更 精 彩</h3>
+		</div>
+		<div class="col-md-12 main-line col-xs-12"></div>
+		<ul class=" list-inline col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
+			<li><a href="http://www.taobao.com" class="btn ">淘&nbsp;宝</a></li>
+			<li><a href="http://www.qq.com" class="btn ">Q&nbsp;Q</a></li>
+			<li><a href="http://weibo.com/" class="btn">微&nbsp;博</a></li>
+			<li><a href="http://www.iqiyi.com" class="btn ">爱&nbsp;奇&nbsp;艺</a></li>
+		</ul>
+	</div>
+</div>
+<!-- 关于 -->
+<div class="about">
+<!-- 分隔行 -->
+	<div class="about-line"></div>
+	<!-- 内容 -->
+	<div class="container about_main" id="about">
+		<!-- 信息 -->
+		<div class="col-md-6">
+			<h1>DIY 网页设计</h1>
+			<h3>我是一个自学网页设计师</h3>
+			<h3>我目前是一个自由的web开发者</h3>
+			<h3>我喜欢使用技术去解决生活中的问题,让生活更方便。</h3>
+			<h3>特长:</h3>
+			<h3>JavaScript，HTML5，CSS3，jQuery，bootstrap3，Angular.js。</h3>
+			<h3>兴趣:</h3>
+			<h3>响应网页设计,编写小程序。</h3>
+		</div>
+		<!-- 图片 -->
+		<div class='col-md-6'>
+			<img src="IMG/1.jpg" class="img-responsive ">
+		</div>
+	</div>
+</div>
+<!--作品页 -->
+<div class="container" id="work">
+	<!-- 标题 -->
+	<div class="col-md-12 work_title">
+		<h1 class="col-md-12 text-center">DIY&nbsp;项&nbsp;目&nbsp;组&nbsp;合&nbsp;.</h1>
+		<h3 class="col-md-12 text-center">下面你会发现我最近的一些工作.</h3>
+	</div>
+	<div class="col-md-12 ">
+		<div class="col-md-4">
+			<div class="work_list">
+				<div>
+					<div id="img1"></div>
+					<img class="img-responsive" src="IMG/4.png" >
+					<div class="caption info">
+						<h3 class="text-center">模拟弹幕效果</h3>
+						<p  class="text-center">html+css+js</p>
+					</div>
+				</div>
+			</div>
+			<div class="work_list">
+				<div>
+				<div id="img2"></div>
+					<img class="img-responsive" src="IMG/11.png" >
+					<div class="caption info">
+						<h3 class="text-center">模拟计算器</h3>
+						<p  class="text-center">html+css+js</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="work_list">
+				<div>
+					<div id="img3"></div>
+					<img class="img-responsive" src="IMG/3.png" >
+					<div class="caption info">
+						<h3 class="text-center">1号店项目</h3>
+						<p  class="text-center">html+css+bootstrap</p>
+					</div>
+				</div>
+			</div>
+			<div class="work_list">
+				<div>
+					<div id="img4"></div>
+					<img class="img-responsive" src="IMG/9.png" >
+					<div class="caption info">
+						<h3 class="text-center">城市风车动画效果</h3>
+						<p  class="text-center">html5+css3</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="work_list">
+				<div>
+					<div id="img5"></div>
+					<img class="img-responsive" src="IMG/7.png" >
+					<div class="caption info">
+						<h3 class="text-center">植物大战僵尸</h3>
+						<p  class="text-center">html+css+js</p>
+					</div>
+				</div>
+			</div>
+			<div class="work_list">
+				<div>
+					<div id="img6"></div>
+					<img class="img-responsive" src="IMG/10.png" >
+					<div class="caption info">
+						<h3 class="text-center">自定义视频播放器</h3>
+						<p  class="text-center">html5+css+js</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--联系 -->
+<div class="container link" id="link">
+	<div class="col-md-6">
+		<h1>DIY工作室邮箱:</h1>
+		<h2>m13461407975@163.com</h2>
+	</div>
+	<div class="col-md-2 col-md-offset-4">
+		<ul class=" list-unstyled ">
+			<li><a href="http://www.taobao.com" class="btn ">淘&nbsp;宝</a></li>
+			<li><a href="http://www.qq.com" class="btn ">Q&nbsp;Q</a></li>
+			<li><a href="http://weibo.com/" class="btn">微&nbsp;博</a></li>
+			<li><a href="http://www.iqiyi.com" class="btn ">爱&nbsp;奇&nbsp;艺</a></li>
+		</ul>
+	</div>
+</div>
+<!-- 页脚 -->
+<footer>
+	<div class="container">
+		<ul class="list-inline ">
+			<li><a href="#home" >主页</a></li>
+			<li>.</li>
+			<li><a href="#about">关于</a></li>
+			<li>.</li>
+			<li><a href="#work">作品</a></li>
+			<li>.</li>
+			<li><a href="#link">联系</a></li>
+		</ul>
+	</div>
+</footer>
+</body>
+</html>
