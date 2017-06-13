@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>分析图</title>
+	<style type="text/css">
+		body{
+			background-color: #99D4F8;
+		}
+		th{
+			font-size: 30px;
+		}
+		td{
+			font-size: 25px;
+		}
+		h1{
+			text-align: center;
+			font-size: 40px;
+		}
+		table{
+			margin: 0 auto;
+		}
+		canvas{
+			border: 1px black solid;
+		}
+		button{
+			font-size:20px;
+			position: relative;
+			left: 115px;
+		}
+		input{
+			font-size: 20px;
+			color: blue;
+		}
+		.block{
+			position: absolute;
+			font-size: 10px;
+			width: 70px;
+			height: 100px;
+			padding-left: 5px;
+		}
+		p:nth-child(1) span{
+			color:blue;
+		}
+		p:nth-child(2) span{
+			color:green;
+		}
+		p:nth-child(3) span{
+			color:red;
+		}
+		.title{
+			text-align: center;
+		}
+		#end2{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>数据分析图</h1>
+	<table border="1" >
+		<tr>
+			<th>数据信息:</th>
+			<th>数据图:</th>
+		</tr>
+		<tr>
+			<td>产品类型:<input type="" name="" id="type"></td>
+			<td rowspan="11">
+				<div class="block">
+					<p>往期:<span>--</span></p>
+					<p>现在:<span>--</span></p>
+					<p>涨跌:<span>--</span></p>
+
+				</div>
+				<canvas id="canvas" width="600" height="400"  >
+				</canvas>
+			</td>
+		</tr>
+		<tr>
+			<td>预期销量:<input type="" name=""id="num"></td>
+		</tr>
+		<tr>
+			<td>实际销量:<input type="" name=""id="num1"></td>
+		</tr>
+		<tr>
+			<td>销售季度:<input type="number" min="1" max="4" id="month1" ></td>
+		</tr>
+		<tr>
+			<td>销售年份:<input type="number" min="2000" max="2018"id="years1"></td>
+		</tr>
+		<tr>
+			<td><button id="btn1">提交信息</button></td>
+		</tr>
+		<tr>
+			<th>往期销量对比:</th>
+		</tr>
+		<tr>
+			<td>往期销量:<input type="" name=""id="num2"></td>
+			
+		</tr>
+		<tr>
+			<td>销售季度:<input type="number" name="" min="1" max=4 id="month2"  ></td>
+		</tr>
+		<tr>
+			<td>销售年份:<input type="number" min="2000" max="2018"id="years2"></td>
+		</tr>
+		<tr>
+		<tr>
+			<td><button id="btn2">提交对比信息</button></td>
+			<td class="title">
+				<span id="title"></span><span id="end1">销量图</span><span id="end2">销量对比图</span>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
