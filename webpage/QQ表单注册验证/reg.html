@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>仿QQ注册</title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+	<div class="container">
+		<h2 class="reg-top"></h2>
+		<div class="reg-box">
+			<div class="reg-main">
+				<h3>注册账号</h3>
+				<form action="" method="post" class="reg-form">
+					<div class="reg-input">
+						<label><i>*</i>昵称: </label>
+						<input type="text" name="nick"  required placeholder="请输入字符串为6-10位的用户名" pattern="[a-zA-Z0-9]{6,10}" />
+					</div>
+					<div class="reg-input">
+						<label><i>*</i>密码: </label>
+						<input type="password" name="password" required placeholder="请输入字符串为6-16位的密码" pattern="[0-9a-zA-Z]{6,16}"/>
+					</div>
+					<div class="reg-input">
+						<label><i>*</i>手机号码: </label>
+						<input type="text" name="phone" required placeholder="请输入以13|15|17开头的11位手机号码" pattern="^1[357][0-9]{9}$" />
+						<span id="tel-tip">忘记密码时可用手机号找回密码</span>
+					</div>
+					<div class="reg-input">
+						<label><i>*</i>邮箱: </label>
+						<input type="email" name="email" required placeholder="请输入邮箱地址,注意填写正确邮箱格式!" />
+					</div>
+					<div class="reg-input">
+						<label>年龄: </label>
+						<input type="number" name="age" min=0 max="100" placeholder="年龄在0-100之间" />
+					</div>
+					<div class="submit-box">
+						<button id="submit">立即注册</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/js.js"></script>
+ </body>
+</html>
