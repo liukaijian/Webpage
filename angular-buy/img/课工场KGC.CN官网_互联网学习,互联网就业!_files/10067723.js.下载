@@ -1,0 +1,77 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(typeof doyoo=='undefined' || !doyoo){
+var d_genId=function(){
+var id ='',ids='0123456789abcdef';
+for(var i=0;i<34;i++){ id+=ids.charAt(Math.floor(Math.random()*16));  }  return id;
+};
+var doyoo={
+env:{
+secure:false,
+mon:'http://m2425.looyu.com/monitor',
+chat:'http://looyuoms2431.looyu.com/chat',
+file:'http://yun-static.soperson.com/131221',
+compId:20001944,
+confId:10067723,
+vId:d_genId(),
+lang:'',
+fixFlash:0,
+fixMobileScale:0,
+subComp:0,
+_mark:'6e7c01ec9957c2f0f16ee881758a4afa8c136a0ca542109b5558ca74ede8064c47af5f9b7f9a0e7a'
+},
+chat:{
+    mobileColor:'',
+    mobileHeight:80,
+    mobileChatHintBottom:0,
+    mobileChatHintMode:0,
+    mobileChatHintColor:'',
+    mobileChatHintSize:0
+}
+
+
+
+
+};
+
+if(typeof talk99Init == 'function'){
+talk99Init(doyoo);
+}
+if(!document.getElementById('doyoo_panel')){
+var supportJquery=typeof jQuery!='undefined';
+var doyooWrite=function(html){
+document.writeln(html);
+}
+
+doyooWrite('<div id="doyoo_panel"></div>');
+
+
+doyooWrite('<div id="doyoo_monitor"></div>');
+
+
+doyooWrite('<div id="talk99_message"></div>')
+
+doyooWrite('<div id="doyoo_share" style="display:none;"></div>');
+doyooWrite('<lin'+'k rel="stylesheet" type="text/css" href="http://yun-static.soperson.com/131221/oms.css?170516"></li'+'nk>');
+doyooWrite('<scr'+'ipt type="text/javascript" src="http://yun-static.soperson.com/131221/oms.js?170601" charset="utf-8"></scr'+'ipt>');
+}
+}
