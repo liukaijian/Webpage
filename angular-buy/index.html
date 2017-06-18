@@ -20,8 +20,10 @@
 </head>
 <body ng-app="myapp">
 	<div ng-controller="myctrl">
+
 		<h1>商品详情:</h1>
-		<table >
+		查询商品:<input type="text" ng-model="num">
+		<table>
 			<tr>
 				<td>编号</td>
 				<td>图片</td>
@@ -30,7 +32,7 @@
 				<td>购买数量</td>
 				<td>操作</td>
 			</tr>
-			<tr ng-repeat="x in goods">
+			<tr ng-repeat="x in goods | filter:num">
 				<td>{{x.goodId}}</td>
 				<td><img ng-src={{x.goodPhoto}}></td>
 				<td>{{x.goodName}}</td>
