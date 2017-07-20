@@ -37,8 +37,8 @@
 				<td><img ng-src={{x.goodPhoto}}></td>
 				<td>{{x.goodName}}</td>
 				<td>{{x.goodPrice}}</td>+
-				<td><button ng-click="add(x.goodId)">+</button>{{x.goodNumber}}<button ng-click="remove(x.goodId)">-</button></td>
-				<td><button ng-click="empty(x.goodId)">删除</button></td>
+				<td><button ng-click="add($index)">+</button>{{x.goodNumber}}<button ng-click="remove($index)">-</button></td>
+				<td><button ng-click="empty($index)">删除</button></td>
 			</tr>
 			<tr>
 				<td colspan="2">购买总价: <span ng-bind="pricesum()"></span></td>
