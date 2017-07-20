@@ -50,7 +50,6 @@ app.controller("myctrl",function($scope){
 		goodPayprice:200
 	},
 	]
-
 	$scope.buysum=function(){
 		var sum=0;
 		angular.forEach($scope.goods,function(x){
@@ -65,35 +64,21 @@ app.controller("myctrl",function($scope){
 		})
 		return sum;
 	}
-	var findindex=function(id){
-		var index=-1;
-		angular.forEach($scope.goods,function(x,key){
-			if(x.goodId===id){
-				index=key;
-				return;
-			}
-		});
-		return index;
-	}
 	$scope.add=function(id){
-		var index=findindex(id);
-		++$scope.goods[index].goodNumber;
+		++$scope.goods[id].goodNumber;
 	}
 	$scope.remove=function(id){
-		var index=findindex(id);
-		if($scope.goods[index].goodNumber>1){
-			--$scope.goods[index].goodNumber;
+		if($scope.goods[id].goodNumber>1){
+			--$scope.goods[id].goodNumber;
 		}else{
 			var deconfirm=confirm("确定要删除此商品吗?");
 			if(deconfirm){
 				$scope.empty(id);
 			}
 		}
-		
 	}
 	$scope.empty=function(id){
-		var index=findindex(id);
-		$scope.goods.splice(index,1);
+		$scope.goods.splice(id,1);
 	}
 	$scope.removeall=function(){
 		$scope.goods={};
